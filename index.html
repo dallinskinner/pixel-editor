@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      .color-button {
+        display: block;
+        height: 24px;
+        width: 24px;
+      }
+
+      #ui {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+      }
+
+      #color-picker button {
+        appearance: none;
+        background: none;
+        border: 1px solid transparent;
+        margin: 0;
+        padding: 0;
+      }
+
+      #color-picker button.ui-color-button--active {
+        border-color: #ff0000;
+      }
+    </style>
+  </head>
+
+  <body style="user-select: none;">
+    <canvas
+      style="background-color: #ddd; border: 1px solid #ddd; user-select: none;"
+      width="100%"
+      height="100%"
+      id="canvas"
+    ></canvas>
+
+    <div id="ui">
+      <div id="color-picker"></div>
+    </div>
+
+    <script src="src/index.ts"></script>
+  </body>
+</html>
